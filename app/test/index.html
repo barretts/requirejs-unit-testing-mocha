@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mocha Test Runner</title>
+    <link rel="stylesheet" href="../bower/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="../bower/mocha/mocha.js"></script>
+    <script src="../bower/chai/chai.js"></script>
+    <script src="../bower/sinon/lib/sinon.js"></script>
+    <script src="../bower/sinon/lib/sinon/util/core.js"></script>
+    <script src="../bower/sinon/lib/sinon/extend.js"></script>
+    <script src="../bower/sinon/lib/sinon/typeOf.js"></script>
+    <script src="../bower/sinon/lib/sinon/times_in_words.js"></script>
+    <script src="../bower/sinon/lib/sinon/spy.js"></script>
+    <script src="../bower/sinon/lib/sinon/call.js"></script>
+    <script src="../bower/sinon/lib/sinon/behavior.js"></script>
+    <script src="../bower/sinon/lib/sinon/stub.js"></script>
+    <script src="../bower/sinon/lib/sinon/mock.js"></script>
+    <script src="../bower/sinon/lib/sinon/collection.js"></script>
+    <script src="../bower/sinon/lib/sinon/assert.js"></script>
+    <script src="../bower/sinon/lib/sinon/sandbox.js"></script>
+    <script src="../bower/sinon/lib/sinon/test.js"></script>
+    <script src="../bower/sinon/lib/sinon/test_case.js"></script>
+    <script src="../bower/sinon/lib/sinon/match.js"></script>
+    <script src="../bower/sinon/lib/sinon/format.js"></script>
+    <script src="../bower/sinon/lib/sinon/log_error.js"></script>
+    <script src="../bower/sinon/lib/sinon/util/event.js"></script>
+    <script src="../bower/sinon/lib/sinon/util/fake_server.js"></script>
+    <script src="../bower/sinon/lib/sinon/util/fake_xml_http_request.js"></script>
+
+    <script>
+      mocha.setup('bdd');
+
+      expect = chai.expect;
+      var should = chai.should();
+    </script>
+
+    <script>
+      var require = {
+        paths: {
+          'backbone.babysitter': '/bower/backbone.babysitter/lib/backbone.babysitter',
+          'backbone.wreqr': '/bower/backbone.wreqr/lib/backbone.wreqr',
+          backbone: '/bower/backbone/backbone',
+          jquery: '/bower/jquery/dist/jquery.min',
+          marionette: '/bower/marionette/lib/core/backbone.marionette',
+          underscore: '/bower/underscore/underscore'
+        },
+        baseUrl: '/'
+      };
+    </script>
+
+    <script src="../bower/requirejs/require.js" data-main="test/mochaRunner.js"></script>
+  </body>
+</html>

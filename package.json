@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-shell": "^1.1.1",
+    "mocha-phantomjs": "^3.5.3",
+    "phantomjs": "^1.9.16",
+    "requirejs": "^2.1.8"
+  }
+}

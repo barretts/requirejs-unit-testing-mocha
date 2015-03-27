@@ -1,0 +1,29 @@
+<!-- adapted from http://jsfiddle.net/derickbailey/M5J8Q/ -->
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <header>
+      <h1>A Marionette Playground</h1>
+    </header>
+
+    <article id="main">
+    </article>
+
+    <script type="text/javascript">
+      var require = {
+        paths: {
+          'backbone.babysitter': '/bower/backbone.babysitter/lib/backbone.babysitter',
+          'backbone.wreqr': '/bower/backbone.wreqr/lib/backbone.wreqr',
+          backbone: '/bower/backbone/backbone',
+          jquery: '/bower/jquery/dist/jquery.min',
+          marionette: '/bower/marionette/lib/core/backbone.marionette',
+          underscore: '/bower/underscore/underscore',
+        }
+      };
+    </script>
+
+    <script src="bower/requirejs/require.js" data-main="main.js"></script>
+  </body>
+</html>
