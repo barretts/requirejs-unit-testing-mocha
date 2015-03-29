@@ -33,7 +33,7 @@ function ($, Backbone, Marionette, sample) {
       $('div#sample').text().should.contain(' here');
     });
 
-    it('sample controller should show', function() {
+    it('stubbed show should return object w/ property stubbed true', function() {
       var mgr = new Backbone.Marionette.Region({
         el: this.container
       });
