@@ -1,3 +1,9 @@
+/*
+ * This file should be named sample.spec.js
+ * General convention for test files is that they have the same name as the file
+ * you are testing appended by an extra .spec extension.
+ */
+
 define([
   'jquery',
   'backbone',
